@@ -18,7 +18,8 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'git-cred', url: 'https://github.com/NeetuPal/3-Tier-NodeJS-MySql-blue-green-deploy.git'
+                git branch: 'main', url: 'https://github.com/NeetuPal/3-Tier-NodeJS-MySql-blue-green-deploy.git'
+				// git branch: 'main', credentialsId: 'git-cred', url: 'https://github.com/NeetuPal/3-Tier-NodeJS-MySql-blue-green-deploy.git'
 				// git branch: 'main', credentialsId: 'git-cred', url: 'https://github.com/jaiswaladi246/3-Tier-NodeJS-MySql-Docker.git'
             }
         }
